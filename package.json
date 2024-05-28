@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ignore data/ index.js"
+    "start": "node index.js"
   },
   "engines": {
-      "node": "16.x"
+      "node": "20.x"
   },
   "keywords": [],
   "author": "",
