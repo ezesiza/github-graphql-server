@@ -1,8 +1,9 @@
 const axios = require("axios");
 const dotenv = require('dotenv')
 
+
 const baseUrl = 'https://api.github.com'
-const { API_TOKEN } = dotenv.config().parsed;
+const { API_TOKEN }  = dotenv.config().parsed;
 
 const axiosRequest = async (url) => {
 
@@ -19,7 +20,7 @@ const axiosRequest = async (url) => {
   });
 };
 
-const resolvers = (context = {
+const resolvers =  {
   Query: {
     getCurrentUser: async (_, { }) => {
       const userUrl = `${baseUrl}/user`;
@@ -62,6 +63,6 @@ const resolvers = (context = {
       return response;
     },
   },
-});
+};
 
 module.exports = resolvers;
