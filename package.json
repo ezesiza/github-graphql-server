@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "engines": {
-      "node": "20.x"
+    "node": "20.x"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
-    "vercel": "^34.2.0"
+    "vercel": "^32.3.0"
   }
 }
